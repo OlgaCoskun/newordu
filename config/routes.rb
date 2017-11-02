@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   #root to: "home#index"
 
-  get 'home/hakkimizda', to: 'home#hakkimizda'
+  get 'welcome/hakkimizda', to: 'welcome#hakkimizda'
+  get 'welcome/yonetim', to: 'welcome#yonetim'
 
 end
