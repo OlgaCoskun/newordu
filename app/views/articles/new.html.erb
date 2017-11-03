@@ -1,3 +1,19 @@
 <h1>Yeni article yapabilirsin</h1>
 
+<%= form_for :article, url: articles_path do |f| %>
 
+    <p>
+        <%= f.label :title, "ssss" %><br>
+        <%= f.text_field :title %>
+    </p>
+
+    <p>
+        <%= f.label :description, "ddd" %><br>
+        <%= f.text_area :description %>
+    </p>
+
+    <p>
+        <%= f.submit('tamam') %>
+    </p>
+
+<% end %>
