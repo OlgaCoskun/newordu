@@ -1,4 +1,4 @@
-<h1>Yeni article yapabilirsin</h1>
+<h1>Degistirmek article yapabilirsin</h1>
 
 <% if @article.errors.any? %>
 <h2><%= pluralize(@article.errors.count, "error") %> prohibited this post from being saved:</h2>
@@ -9,7 +9,7 @@
 </ul>
 <% end %>
 
-<%= form_for :article, url: articles_path do |f| %>
+<%= form_for :article, url: article_path(@article), method: :put do |f| %>
 
     <p>
         <%= f.label :title, "ssss" %><br>
@@ -22,7 +22,7 @@
     </p>
 
     <p>
-        <%= f.submit class: "btn btn-primary", type: "submit", value: "Tamam", data: { disable_with: "Ben calisiyorum..."} %>
+        <%= f.submit %>
     </p>
 
 <% end %>

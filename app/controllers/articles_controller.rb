@@ -8,6 +8,10 @@ class ArticlesController < ApplicationController
     @article = Article.new
   end
 
+  def edit
+    @article = Article.find(params[:id])
+  end
+
   def show
     @article = Article.find(params[:id])
   end
@@ -18,6 +22,15 @@ class ArticlesController < ApplicationController
       redirect_to @article
     else
       render action: 'new'
+    end
+  end
+
+  def update
+    @article = Article.find(params[:id])
+    if @article.update(article_params)
+      redirect_to @article
+    else
+      render action: 'edit'
     end
   end
 
