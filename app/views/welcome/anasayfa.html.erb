@@ -2,3 +2,31 @@
 
 <%= link_to 'Blog', articles_path %> |
 <%= link_to 'Yonetim', yonetim_path %>
+
+
+
+
+<nav class="navbar">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">
+        <i class="glyphicon glyphicon-home" aria-hidden="true"></i>
+      </a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Hakkımızda <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Derneğimizin Tarihçesi</a></li>
+          <li><a href="#">Derneğimizin Tüzüğü</a></li>
+          <li><a href="#">Derneğimizin Etkinlikleri</a></li>
+        </ul>
+      </li>
+      <li><%= link_to 'Yonetim', yonetim_path %></li>
+      <li><a href="galery.html">Galeri</a></li>
+      <li><a href="iletisim.html">İletişim</a></li>
+      <li><%= link_to 'Blog', articles_path %></li>
+      <li><a href="duyurular.html">Duyurular</a></li>
+    </ul>
+  </div>
+</nav>
+
