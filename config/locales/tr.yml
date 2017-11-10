@@ -1,0 +1,4 @@
+tr:
+  devise:
+    failure:
+      unauthenticated: "Gel ve regist yap"
