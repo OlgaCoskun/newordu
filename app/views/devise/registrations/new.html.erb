@@ -4,25 +4,25 @@
   <%= devise_error_messages! %>
 
   <div class="field">
-    <%= f.label :email %><br />
+    <%= f.label :email, "E-Posta Adresiniz" %><br />
     <%= f.email_field :email, autofocus: true %>
   </div>
 
   <div class="field">
-    <%= f.label :password %>
+    <%= f.label :password, "Şifre" %>
     <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <em>(Şifreniz en az <%= @minimum_password_length %> karakterden oluşmalı, harf ve rakam içermelidir)</em>
     <% end %><br />
     <%= f.password_field :password, autocomplete: "off" %>
   </div>
 
   <div class="field">
-    <%= f.label :password_confirmation %><br />
+    <%= f.label :password_confirmation, "Şifre tekrari" %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
+  </div><br />
 
   <div class="actions">
-    <%= f.submit "Sign up" %>
+    <%= f.submit "Üye Ol" %>
   </div>
 <% end %>
 
