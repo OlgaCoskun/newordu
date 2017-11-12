@@ -9,5 +9,5 @@ Rails.application.routes.draw do
   root 'welcome#anasayfa'
   get 'yonetim', to: 'welcome#yonetim'
 
-  resources :articles  #path: 'blog'
+  resources :articles,  path: 'blog'
 end
