@@ -9,5 +9,8 @@ Rails.application.routes.draw do
   root 'welcome#anasayfa'
   get 'yonetim', to: 'welcome#yonetim'
 
+scope(path_names: {new: 'yeni', edit: 'değiştermek'}) do
   resources :articles,  path: 'blog'
+end
+
 end
