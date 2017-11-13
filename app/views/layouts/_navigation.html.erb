@@ -20,6 +20,7 @@
       <li><%= link_to " Üye ol", new_user_registration_path, class: "glyphicon glyphicon-user" %></li>
       <li><% if user_signed_in? %>
             <%= link_to "Çikiş", destroy_user_session_path, method: :delete %>
+            <%= current_user.email %>
           <% else %>
             <%= link_to " Giriş Yap", new_user_session_path, class: "glyphicon glyphicon-log-in" %>
           <% end %>
