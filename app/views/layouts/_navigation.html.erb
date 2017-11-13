@@ -17,7 +17,9 @@
       <li><%= link_to "blog", articles_path %></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Üye Ol</a></li>
+      <li><%= link_to " Üye ol", new_user_registration_path, class: "glyphicon glyphicon-user" %></li>
+
+
       <li><% if user_signed_in? %>
             <%= link_to "Çikiş", destroy_user_session_path, method: :delete %>
           <% else %>

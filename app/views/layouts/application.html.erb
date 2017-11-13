@@ -23,15 +23,10 @@
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
-    <% if user_signed_in? %>
-      <%= link_to "Çikiş", destroy_user_session_path, method: :delete %>
-    <% else %>
-      <%= link_to "Giriş", new_user_session_path %>
-    <% end %>
-
-    <%#= render 'layouts/messages' %>
     <div class="container">
-      <%= yield %>
+      <div class="row">
+        <%= yield %>
+      </div>
     </div>
 
     <%= render 'layouts/footer' %>
