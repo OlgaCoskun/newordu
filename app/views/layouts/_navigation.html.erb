@@ -18,7 +18,12 @@
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="#"><span class="glyphicon glyphicon-user"></span> Üye Ol</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Giriş Yap</a></li>
+      <li><% if user_signed_in? %>
+            <%= link_to "Çikiş", destroy_user_session_path, method: :delete %>
+          <% else %>
+            <%= link_to " Giriş Yap", new_user_session_path, class: "glyphicon glyphicon-log-in" %>
+          <% end %>
+      </li>
     </ul>
   </div>
 </nav>
