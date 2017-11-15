@@ -1,5 +1,5 @@
 class Galeri < ApplicationRecord
-  attr_accessible :photo
+  #attr_accessor :photo
 
   mount_uploader :photo, PhotoUploader
 end

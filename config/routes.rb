@@ -13,6 +13,7 @@ Rails.application.routes.draw do
     resources :articles,  path: 'blog'
   end
 
+  root 'galeris#index'
   resources :galeris
 
 end
