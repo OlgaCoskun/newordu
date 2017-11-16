@@ -1,1 +1,5 @@
 <h2>Gareri sayfasi</h2>
+
+<% @galeris.each do |galeri| %>
+    <%=  image_tag(galeri.image.url, width: '100%', crop: "scale")  %>
+<% end %>

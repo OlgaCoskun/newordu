@@ -1,1 +1,15 @@
 <h2>All photos</h2>
+
+<p>
+<strong>Title:</strong>
+<%= @galeri.title %>
+</p>
+
+<p>
+<%= image_tag @galeri.image_url.to_s %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_galeri_path(@galeri) %> |
+<%= link_to 'Back', galeris_path %>
