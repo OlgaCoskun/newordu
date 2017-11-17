@@ -1,14 +1,10 @@
 <h2>All photos</h2>
 
-<p>
-<strong>Title:</strong>
-<%= @galeri.title %>
-</p>
+<%= link_to 'All photos', galeris_path %>
+<h1><%= @galeri.title %></h1>
 
-<p>
-<%= image_tag(@galeri.image_url.to_s) %>
+<%= image_tag(@galeri.image.url, alt: 'Image') if @galeri.image? %>
 
-</p>
 
 
 

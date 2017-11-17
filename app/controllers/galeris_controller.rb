@@ -2,7 +2,7 @@ class GalerisController < ApplicationController
  before_action :set_galeri, only: [:show, :edit, :update, :destroy]
 
   def index
-    @Galeris = Galeri.all
+    @galeris = Galeri.all
   end
 
   def show
@@ -45,7 +45,7 @@ class GalerisController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def galeri_params
-      params.require(:galeri).permit(:title, :image, :image_url)
+      params.require(:galeri).permit(:title, :image, :photo, :image_url)
     end
 end
 
