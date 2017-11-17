@@ -1,12 +1,12 @@
-<%= form_for @galeri do |f| %>
+<%= form_with(model: @galeri, local: true) do |f| %>
 
   <p>
     <%= f.label :title %><br/>
     <%= f.text_field :title %>
   </p>
   <p>
-    <%= f.label :image %>
-    <%= f.file_field :image %>
+    <%= f.label :avatar %>
+    <%= f.file_field :avatar %>
   </p>
 
   <div class="actions">

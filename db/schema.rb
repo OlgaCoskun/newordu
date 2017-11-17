@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20171116083816) do
   end
 
   create_table "galeris", force: :cascade do |t|
-    t.string "image"
+    t.string "avatar"
     t.string "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
