@@ -1,11 +1,18 @@
-<h2>Gareri sayfasi</h2>
 
-<% @galeris.each do |g| %>
+
+  <tbody>
+    <% @galeris.each do |g| %>
       <tr>
         <td><%= g.title %></td>
-        <td><%= image_tag(g.avatar.large.url) if g.avatar? %></td>
+        <td><%= image_tag(g.avatar.thumb.url) if g.avatar? %></td>
         <td><%= link_to 'Show', g %></td>
         <td><%= link_to 'Edit', edit_galeri_path(g) %></td>
         <td><%= link_to 'Destroy', g, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New photo', new_galeri_path %>

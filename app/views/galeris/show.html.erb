@@ -1,14 +1,8 @@
-<h2>All photos</h2>
-
-
-<%= image_tag(@galeri.avatar.large.url) if @galeri.avatar? %>
 <p>
   <strong>Title:</strong>
   <%= @galeri.title %>
 </p>
+<%= image_tag(@galeri.avatar.thumb.url) if @galeri.avatar? %>
 
-
-
-
-<%= link_to 'Eddddit', edit_galeri_path(@galeri) %> |
+<%= link_to 'Edit', edit_galeri_path(@galeri) %> |
 <%= link_to 'Back', galeris_path %>

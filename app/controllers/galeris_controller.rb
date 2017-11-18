@@ -45,7 +45,7 @@ class GalerisController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def galeri_params
-      params.require(:galeri).permit(:title, :avatar, :image_url)
+      params.require(:galeri).permit(:title, :avatar)
     end
 end
 
