@@ -24,4 +24,5 @@
 
 .env
 public/uploads
-
+config/cloudinary.yml
+config/initializers/cloudinary.rb
