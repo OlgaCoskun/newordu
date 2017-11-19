@@ -22,7 +22,7 @@
 
     <div class="row">
       <div class="col-md-4">
-         <%= image_tag(g.avatar.medium.url) if g.id.uniq? } %>
+         <%= image_tag(g.avatar.medium.url) if g.avatar? %>
           <%= g.title %>
         </div>
 
