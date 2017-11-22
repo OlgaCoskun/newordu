@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171117181101) do
+ActiveRecord::Schema.define(version: 20171122081702) do
 
   create_table "articles", force: :cascade do |t|
     t.string "title"
@@ -24,6 +24,8 @@ ActiveRecord::Schema.define(version: 20171117181101) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "avatar"
+    t.string "avatar_index"
+    t.index ["avatar_index"], name: "index_galeris_on_avatar_index"
   end
 
   create_table "users", force: :cascade do |t|

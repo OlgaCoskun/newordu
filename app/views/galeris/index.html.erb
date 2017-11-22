@@ -1,2 +1,27 @@
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-<%= render 'avatar', post: @galeris %>
+
+
+
+<div class="row">
+  <% @galeris.each do |g| %>
+
+    <div class="col-md-4">
+      <a href="<%= galeri_path(g.id) %>">
+        <%= image_tag g.avatar.medium.url(g.avatar_index), class: "galeri" %>
+      </a>
+    </div>
+
+  <% end %>
+  </div>
