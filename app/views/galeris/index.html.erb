@@ -7,11 +7,6 @@
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
-
-
 
 
 <div class="row">
@@ -20,7 +15,9 @@
       <a href="<%= galeri_path(g.id) %>">
         <%= image_tag g.avatar.medium.url(g.avatar_index), class: "galeri" %>
       </a>
-      <%= g.title %>
+      <%= g.title %><br>
+      <%= link_to 'Değiştir', edit_galeri_path(g) %>
+      <%= link_to 'Sil', g, method: :delete, data: { confirm: 'Emin misin?' } %>
     </div>
   <% end %>
   </div>
