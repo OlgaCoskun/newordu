@@ -1,5 +1,7 @@
 <div class="container">
   <div class="row">
+
+    <h2>Galeri</h2>
     <% @galeris.each do |g| %>
       <div class="col-md-4">
         <a href="<%= galeri_path(g.id) %>">
@@ -10,5 +12,7 @@
         <%= link_to 'Sil', g, method: :delete, data: { confirm: 'Emin misin?' } %>
       </div>
     <% end %>
+
+    <%= link_to 'Yeni foto', new_galeri_path(@galeri), class: "btn btn-success btn-lg" %>
   </div>
 </div>
