@@ -3,5 +3,8 @@
     <%= @article.description %>
 </p>
 
+<% if can? :update, @article %>
 <%= link_to "Edit this article", edit_article_path(@article) %> |
+<% end %>
+
 <%= link_to "Back to article listing", articles_path %>

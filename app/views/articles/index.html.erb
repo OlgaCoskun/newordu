@@ -7,12 +7,19 @@
     <p><%= article.description %></p>
 
     <p>
-        <%= link_to 'Yeni', new_article_path(@article) %> |
         <%= link_to 'Gösteri', article_path(article) %> |
+
+        <% if can? :update, article %>
         <%= link_to 'Değiştermek', edit_article_path(article) %> |
+        <% end %>
+
+        <% if can? :destroy, article %>
         <%= link_to 'Sil', article_path(article), method: :delete, data: {confirm: 'Emin misin ?'} %>
+        <% end %>
     </p>
 
     <hr>
 
 <% end %>
+
+<%= link_to 'Yeni', new_article_path(@article) %>
