@@ -1,15 +1,17 @@
 <%= form_for(@galeri,:html => {:multipart => true}) do |form| %>
 
   <div class="field">
-    <%= form.label :title %>
+    <%= form.label :title, "hgjhg" %><br>
     <%= form.text_field :title, id: :galeri_title %>
-  </div>
+  </div><br>
 
   <div class="field">
-    <%= form.label :avatar %>
-    <%= form.file_field :avatar%>
-  </div>
+    <%= form.label :avatar, "foto" %>
+    <%= form.file_field :avatar %>
+  </div><br>
+
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class: "btn btn-primary", type: "submit", value: "Tamam", data: { disable_with: "Ben calisiyorum..."} %>
   </div>
+
 <% end %>
