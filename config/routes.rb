@@ -13,7 +13,11 @@ Rails.application.routes.draw do
     resources :articles,  path: 'blog'
   end
 
+  scope(path_names: {new: 'yeni', edit: 'değiştermek'}) do
+    resources :galeris,  path: 'galeri'
+  end
+
   #root 'galeris#index'
-  resources :galeris
+  #resources :galeris
 
 end

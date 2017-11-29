@@ -1,4 +1,7 @@
-<h1>Listing all articles</h1>
+<div class="container">
+  <div class="row">
+
+<h1>Hepsi blog</h1>
 
 <% @articles.each do |article| %>
 
@@ -7,14 +10,14 @@
     <p><%= article.description %></p>
 
     <p>
-        <%= link_to 'Gösteri', article_path(article) %> |
+        <%= link_to 'Gösteri', article_path(article), class: "btn btn-info btn-xs" %>
 
         <% if can? :update, article %>
-        <%= link_to 'Değiştermek', edit_article_path(article) %> |
+        <%= link_to 'Değiştermek', edit_article_path(article), class: "btn btn-warning btn-xs" %>
         <% end %>
 
         <% if can? :destroy, article %>
-        <%= link_to 'Sil', article_path(article), method: :delete, data: {confirm: 'Emin misin ?'} %>
+        <%= link_to 'Sil', article_path(article), method: :delete, data: {confirm: 'Emin misin ?'}, class: "btn btn-danger btn-xs" %>
         <% end %>
     </p>
 
@@ -22,4 +25,7 @@
 
 <% end %>
 
-<%= link_to 'Yeni', new_article_path(@article) %>
+<%= link_to 'Yeni blog', new_article_path(@article), class: "btn btn-success btn-lg" %>
+
+    </div>
+</div>
