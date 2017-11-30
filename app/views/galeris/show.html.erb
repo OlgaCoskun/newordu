@@ -4,5 +4,8 @@
 </p>
 <%= image_tag(@galeri.avatar.thumb.url) if @galeri.avatar? %>
 
+<% if can? :update, Galeri %>
 <%= link_to 'Edit', edit_galeri_path(@galeri), class: "btn btn-warning btn-xs" %>
-<%= link_to 'Back', galeris_path %>
+<% end %>
+
+<%= link_to 'Back', galeris_path, class: "btn btn-primary btn-xs" %>

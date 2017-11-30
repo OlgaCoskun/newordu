@@ -8,11 +8,20 @@
           <%= image_tag g.avatar.medium.url(g.avatar_index), class: "galeri" %>
         </a><br>
         <%= g.title %><br>
-        <%= link_to 'Değiştir', edit_galeri_path(g) %>
-        <%= link_to 'Sil', g, method: :delete, data: { confirm: 'Emin misin?' } %>
+        <% if can? :update, @galeri %>
+        <%= link_to 'Değiştir', edit_galeri_path(g), class: "btn btn-warning btn-xs" %>
+        <% end %>
+
+        <% if can? :destroy, g %>
+        <%= link_to 'Sil', g, method: :delete, data: { confirm: 'Emin misin?' }, class: "btn btn-danger btn-xs" %>
+        <% end %>
+
       </div>
     <% end %>
 
+    <% if can? :create, @galeri %>
     <%= link_to 'Yeni foto', new_galeri_path(@galeri), class: "btn btn-success btn-lg" %>
+    <% end %>
   </div>
 </div>
+<br>
