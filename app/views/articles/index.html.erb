@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
 
-<h2>Hepsi blog</h2>
+<h2>Bütün bloglar</h2>
 
 <% @articles.each do |article| %>
 
@@ -13,7 +13,7 @@
         <%= link_to 'Gösteri', article_path(article), class: "btn btn-info btn-xs" %>
 
         <% if can? :update, article %>
-        <%= link_to 'Değiştermek', edit_article_path(article), class: "btn btn-warning btn-xs" %>
+        <%= link_to 'Değiştir', edit_article_path(article), class: "btn btn-warning btn-xs" %>
         <% end %>
 
         <% if can? :destroy, article %>
