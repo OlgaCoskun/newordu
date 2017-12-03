@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   devise_for :users
   get 'home/index'
 
@@ -19,5 +20,8 @@ Rails.application.routes.draw do
 
   #root 'galeris#index'
   #resources :galeris
+
+  #get 'iletisim/index'
+  get 'iletisim', to: 'iletisim#index'
 
 end
