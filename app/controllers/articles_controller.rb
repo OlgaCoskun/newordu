@@ -16,6 +16,7 @@ class ArticlesController < ApplicationController
   end
 
   def show
+    #@articles = @user.articles.paginate(page: params[:page])
   end
 
   def create

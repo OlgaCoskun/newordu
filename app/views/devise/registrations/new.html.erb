@@ -12,6 +12,11 @@
   </div>
 
   <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
     <%= f.label :password, "Şifre" %>
     <% if @minimum_password_length %>
     <em>(Şifreniz en az <%= @minimum_password_length %> karakterden oluşmalı, harf ve rakam içermelidir)</em>

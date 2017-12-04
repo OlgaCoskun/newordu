@@ -9,6 +9,8 @@
 
     <p><%= article.description %></p>
 
+    <p class="date"><%= article.created_at.strftime("%B, %d, %Y") %> </p>
+
     <p>
         <%= link_to 'Gösteri', article_path(article), class: "btn btn-info btn-xs" %>
 
