@@ -1,0 +1,2 @@
+class Duyurular < ApplicationRecord
+end
