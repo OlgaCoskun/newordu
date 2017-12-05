@@ -25,6 +25,10 @@ Rails.application.routes.draw do
   get 'iletisim', to: 'iletisim#index'
 
   #get 'duyurular/index'
-  get 'duyurular', to: 'duyurular#index'
+  #get 'duyurular', to: 'duyurular#index'
+
+  scope(path_names: {new: 'yeni', edit: 'değiştermek'}) do
+    resources :duyurular,  path: 'duyurular'
+  end
 
 end
