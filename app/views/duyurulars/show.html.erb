@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+
+<h4><%= @duyurular.title %></h4>
+<p>
+    <%= @duyurular.text %>
+</p>
+
+<% if can? :update, @duyurular %>
+<%= link_to "Değistir", edit_duyurular_path(@duyurular), class: "btn btn-warning btn-xs" %>
+<% end %>
+
+<%= link_to "Blog sayfasına dön", duyurulars_path, class: "btn btn-primary btn-xs" %>
+    </div>
+</div>

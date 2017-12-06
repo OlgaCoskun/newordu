@@ -1,0 +1,32 @@
+<h2> Bütün duyurular</h2>
+
+<% @duyurulars.each do |duyurular| %>
+
+    <h4><%= duyurular.title %></h4>
+
+    <p><%= duyurular.text %></p>
+
+
+    <p class="date"><%= duyurular.created_at.strftime("%B, %d, %Y") %> </p>
+
+    <p>
+        <%= link_to 'Gösteri', duyurular_path(duyurular), class: "btn btn-info btn-xs" %>
+
+        <% if can? :update, duyurular %>
+        <%= link_to 'Değiştir', edit_duyurular_path(duyurular), class: "btn btn-warning btn-xs" %>
+        <% end %>
+
+        <% if can? :destroy, duyurular %>
+        <%= link_to 'Sil', duyurular_path(duyurular), method: :delete, data: {confirm: 'Emin misin ?'}, class: "btn btn-danger btn-xs" %>
+        <% end %>
+    </p>
+
+    <hr>
+
+<% end %>
+
+<%= link_to 'Yeni blog', new_duyurular_path(@duyurular), class: "btn btn-success btn-lg" %>
+
+    </div>
+</div>
+<br>
