@@ -10,7 +10,7 @@
     <p><%= duyurular.text %></p>
 
 
-    <p class="date"><%= duyurular.created_at.strftime("%B, %d, %Y") %> </p>
+    <p class="date"><%= duyurular.created_at.strftime("%d, %B, %Y") %> </p>
 
     <p>
         <%= link_to 'Gösteri', duyurular_path(duyurular), class: "btn btn-info btn-xs" %>

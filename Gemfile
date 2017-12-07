@@ -46,6 +46,9 @@ gem 'cancancan'
 
 gem 'jquery-ui-rails'
 
+gem 'rails-i18n'
+
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
