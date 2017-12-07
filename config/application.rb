@@ -16,5 +16,7 @@ module Newordu
     # -- all .rb files in that directory are automatically loaded.
 
     config.i18n.default_locale = :tr
+    config.time_zone = 'Istanbul'
+
   end
 end
