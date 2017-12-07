@@ -1,8 +1,14 @@
-<script>
+ <script>
   $( function() {
-    $( "#datepicker" ).datepicker();
-  } );
+    $( "#datepicker" ).datepicker({
+        dateFormat:'d/m/yy'
+    });
+
+    });
   </script>
+
+
+
 
 <% if @duyurular.errors.any? %>
 <h2><%= pluralize(@duyurular.errors.count, "error") %> prohibited this post from being saved:</h2>
@@ -16,7 +22,7 @@
 <%= form_for :duyurular, url: duyurulars_path do |f| %>
 
     <p>
-        <%= f.label :title, "Duyurular" %><br>
+        <%= f.label :title, "Tarih" %><br>
         <%= f.text_field :title, id:"datepicker" %>
     </p>
 

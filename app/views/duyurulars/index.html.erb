@@ -1,3 +1,6 @@
+<div class="container">
+  <div class="row">
+
 <h2> Bütün duyurular</h2>
 
 <% @duyurulars.each do |duyurular| %>
@@ -25,8 +28,13 @@
 
 <% end %>
 
-<%= link_to 'Yeni blog', new_duyurular_path(@duyurular), class: "btn btn-success btn-lg" %>
+<% if can? :create, :duyurular %>
+  <%= link_to 'Yeni duyurular', new_duyurular_path(@duyurular), class: "btn btn-success btn-lg" %>
+<% end %>
 
     </div>
 </div>
 <br>
+
+  </<div>
+</div>
