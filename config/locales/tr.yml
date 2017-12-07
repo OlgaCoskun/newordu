@@ -70,20 +70,6 @@ tr:
               taken: "artık var"
             password:
               blank: "yazmalısın"
-    articles:
-     index:
-        title: "Hepsi"
-     edit:
-       title: "Değiştermek blog"
-     new:
-        title: "Yeni blog"
-  activerecord:
-    errors:
-      messages:
-        record_invalid: 'Doğrulama başarısız oldu: %{errors}'
-        restrict_dependent_destroy:
-          has_one: Bağlı bir kayıt %{record} bulunduğu için kayıt silinemedi
-          has_many: Bağlı kayıtlar %{record} bulunduğu için kayıt silinemedi
   date:
     abbr_day_names:
     - Pzr
