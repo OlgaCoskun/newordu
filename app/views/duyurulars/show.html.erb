@@ -2,9 +2,10 @@
   <div class="row">
 
 <h4><%= @duyurular.title %></h4>
-<p>
-    <%= @duyurular.text %>
-</p>
+
+<p><%= @duyurular.text %></p>
+
+<p class="date"><%= l(@duyurular.created_at, format: :long) %></p>
 
 <% if can? :update, @duyurular %>
 <%= link_to "Değistir", edit_duyurular_path(@duyurular), class: "btn btn-warning btn-xs" %>
