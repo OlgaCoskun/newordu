@@ -22,11 +22,6 @@ a {
   font-size: 22px;
 }
 
-.container-fluid {
-    padding-left: 0;
-    padding-right: 0;
-}
-
 h2 {
     display: block;
     text-align: center;
@@ -39,4 +34,9 @@ h2 {
 #article_description {
     width: 400px;
     height: 100px;
+}
+
+#slider {
+    padding-left: 0;
+    padding-right: 0;
 }
