@@ -1,6 +1,6 @@
 class DuyurularsController < ApplicationController
 
-    load_and_authorize_resource
+  load_and_authorize_resource
 
   before_action :authenticate_user!, only: [:new, :edit, :update, :destroy]
   before_action :set_duyurular, only: [:edit, :update, :show, :destroy]

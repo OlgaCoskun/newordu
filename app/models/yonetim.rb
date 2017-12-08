@@ -1,0 +1,2 @@
+class Yonetim < ApplicationRecord
+end

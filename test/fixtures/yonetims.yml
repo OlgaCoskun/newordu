@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ny: 1
+  title_y: MyString
+  text_y: MyString
+  nu: 1
+  title_u: MyString
+  text_u: MyString
+
+two:
+  ny: 1
+  title_y: MyString
+  text_y: MyString
+  nu: 1
+  title_u: MyString
+  text_u: MyString
