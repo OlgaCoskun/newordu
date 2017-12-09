@@ -7,7 +7,8 @@
 </ul>
 <% end %>
 
-<%= form_for :yonetim, url: yonetims_path do |f| %>
+
+<%= form_for :yonetim, url: yonetim_path(@yonetim), method: :put do |f| %>
 
     <p>
         <%= f.label :title_y, "Kurucu yönetim" %><br>

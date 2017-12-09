@@ -13,35 +13,31 @@
 
     <tbody>
         <% @yonetims.each do |yonetim| %>
-      <tr>
-        <td></td>
-        <td><%= yonetim.title_y %>
-            <% if can? :update, yonetim %>
-            <%= link_to 'Değiştir', edit_yonetim_path(yonetim), class: "btn btn-warning btn-xs" %>
-            <% end %>
+          <tr>
+            <td></td>
+            <td><%= yonetim.title_y %>
+                <% if can? :update, yonetim %>
+                <%= link_to 'Değiştir', edit_yonetim_path(yonetim), class: "btn btn-warning btn-xs" %>
+                <% end %>
 
-            <% if can? :destroy, yonetim %>
-            <%= link_to 'Sil', yonetim_path(yonetim), method: :delete, data: {confirm: 'Emin misin ?'}, class: "btn btn-danger btn-xs" %>
-            <% end %>
+                <% if can? :destroy, yonetim %>
+                <%= link_to 'Sil', yonetim_path(yonetim), method: :delete, data: {confirm: 'Emin misin ?'}, class: "btn btn-danger btn-xs" %>
+                <% end %>
+            </td>
 
-        </td>
+            <td></td>
+            <td><%= yonetim.title_u %>
+                <% if can? :update, yonetim %>
+                <%= link_to 'Değiştir', edit_yonetim_path(yonetim), class: "btn btn-warning btn-xs" %>
+                <% end %>
 
-        <td></td>
-        <td><%= yonetim.title_u %>
-            <% if can? :update, yonetim %>
-            <%= link_to 'Değiştir', edit_yonetim_path(yonetim), class: "btn btn-warning btn-xs" %>
-            <% end %>
-
-            <% if can? :destroy, yonetim %>
-            <%= link_to 'Sil', yonetim_path(yonetim), method: :delete, data: {confirm: 'Emin misin ?'}, class: "btn btn-danger btn-xs" %>
-            <% end %>
-        </td>
-      </tr>
-
-
-
-<% end %>
-</tbody>
+                <% if can? :destroy, yonetim %>
+                <%= link_to 'Sil', yonetim_path(yonetim), method: :delete, data: {confirm: 'Emin misin ?'}, class: "btn btn-danger btn-xs" %>
+                <% end %>
+            </td>
+          </tr>
+        <% end %>
+    </tbody>
 </table>
 </div>
 
