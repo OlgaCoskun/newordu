@@ -1,0 +1,10 @@
+<% @yonetims.each do |yonetim| %>
+    <% if can? :update, yonetim %>
+        <%= link_to 'Değiştir', edit_yonetim_path(yonetim), class: "btn btn-warning btn-xs" %>
+    <% end %>
+
+    <% if can? :destroy, yonetim %>
+        <%= link_to 'Sil', yonetim_path(yonetim), method: :delete, data: {confirm: 'Emin misin ?'}, class: "btn btn-danger btn-xs" %>
+    <% end %>
+
+<% end %>
