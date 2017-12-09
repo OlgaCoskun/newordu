@@ -3,7 +3,7 @@ class GalerisController < ApplicationController
   before_action :set_galeri, only: [:show, :edit, :update, :destroy]
 
   def index
-    @galeris = Galeri.all
+    @galeris = Galeri.all.sort
   end
 
   def show
