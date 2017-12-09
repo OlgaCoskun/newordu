@@ -1,0 +1,57 @@
+<div class="container">
+    <h2>Anadolu yakası aslancami derneği yönetim ve üyeleri</h2>
+<div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Kurucu yönetim</th>
+        <th></th>
+        <th>Yönetim kurulu</th>
+      </tr>
+    </thead>
+
+    <tbody>
+        <% @yonetims.each do |yonetim| %>
+      <tr>
+        <td></td>
+        <td><%= yonetim.title_y %>
+            <% if can? :update, yonetim %>
+            <%= link_to 'Değiştir', edit_yonetim_path(yonetim), class: "btn btn-warning btn-xs" %>
+            <% end %>
+
+            <% if can? :destroy, yonetim %>
+            <%= link_to 'Sil', yonetim_path(yonetim), method: :delete, data: {confirm: 'Emin misin ?'}, class: "btn btn-danger btn-xs" %>
+            <% end %>
+
+        </td>
+
+        <td></td>
+        <td><%= yonetim.title_u %>
+            <% if can? :update, yonetim %>
+            <%= link_to 'Değiştir', edit_yonetim_path(yonetim), class: "btn btn-warning btn-xs" %>
+            <% end %>
+
+            <% if can? :destroy, yonetim %>
+            <%= link_to 'Sil', yonetim_path(yonetim), method: :delete, data: {confirm: 'Emin misin ?'}, class: "btn btn-danger btn-xs" %>
+            <% end %>
+        </td>
+      </tr>
+
+
+
+<% end %>
+</tbody>
+</table>
+</div>
+
+<% if can? :create, :yonetim %>
+  <%= link_to 'Yeni', new_yonetim_path(@yonetim), class: "btn btn-success btn-lg" %>
+<% end %>
+
+    </div>
+</div>
+<br>
+
+  </<div>
+</div>

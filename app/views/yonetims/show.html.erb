@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+
+<p><%= @yonetim.title_y %></p>
+
+<p><%= @yonetim.title_u %></p>
+
+<p class="date"><%= l(@yonetim.created_at, format: :long) %></p>
+
+<% if can? :update, @yonetim %>
+<%= link_to "Değistir", edit_yonetim_path(@yonetim), class: "btn btn-warning btn-xs" %>
+<% end %>
+
+<%= link_to "Yonetim sayfasına dön", yonetims_path, class: "btn btn-primary btn-xs" %>
+    </div>
+</div>

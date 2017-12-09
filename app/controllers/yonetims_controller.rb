@@ -5,7 +5,7 @@ class YonetimsController < ApplicationController
   before_action :set_yonetim, only: [:edit, :update, :show, :destroy]
 
   def index
-    @yonetims = Yonetim.all.reverse
+    @yonetims = Yonetim.all
   end
 
   def new
@@ -49,7 +49,7 @@ class YonetimsController < ApplicationController
     end
 
     def yonetim_params
-      params.require(:yonetim).permit(:title, :text, :user_id)
+      params.require(:yonetim).permit(:ny, :title_y, :text_y, :nu, :title_u, :text_u, :user_id)
     end
 
 end

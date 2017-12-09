@@ -1,0 +1,28 @@
+<% if @yonetim.errors.any? %>
+<h2><%= pluralize(@yonetim.errors.count, "error") %> prohibited this post from being saved:</h2>
+<ul>
+    <% @yonetim.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+    <% end %>
+</ul>
+<% end %>
+
+<%= form_for :yonetim, url: yonetims_path do |f| %>
+
+    <p>
+        <%= f.label :title_y, "Kurucu yönetim" %><br>
+        <%= f.text_field :title_y %>
+    </p>
+
+    <p>
+        <%= f.label :title_u, "Yönetim kurulu" %><br>
+        <%= f.text_field :title_u %>
+    </p>
+
+    <p>
+        <%= f.submit class: "btn btn-primary", type: "submit", value: "Tamam", data: { disable_with: "Yükleniyor..."} %>
+    </p>
+
+<% end %>
+
+<%= link_to "Dönmek hepsi blog sayfa", yonetims_path %>
