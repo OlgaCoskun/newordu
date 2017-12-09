@@ -4,9 +4,9 @@
   <table class="table">
     <thead>
       <tr>
-        <th></th>
+
         <th>Kurucu yönetim</th>
-        <th></th>
+
         <th>Yönetim kurulu</th>
       </tr>
     </thead>
@@ -14,7 +14,7 @@
     <tbody>
         <% @yonetims.each do |yonetim| %>
           <tr>
-            <td></td>
+
             <td><%= yonetim.title_y %>
                 <% if can? :update, yonetim %>
                 <%= link_to 'Değiştir', edit_yonetim_path(yonetim), class: "btn btn-warning btn-xs" %>
@@ -25,7 +25,7 @@
                 <% end %>
             </td>
 
-            <td></td>
+
             <td><%= yonetim.title_u %>
                 <% if can? :update, yonetim %>
                 <%= link_to 'Değiştir', edit_yonetim_path(yonetim), class: "btn btn-warning btn-xs" %>
