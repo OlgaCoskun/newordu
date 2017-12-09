@@ -7,7 +7,7 @@
 </ul>
 <% end %>
 
-<%= form_for(@yonetim.sort_by(&:time_ago)) do |f| %>
+<%= form_for(@yonetim.order) do |f| %>
 
 
     <p>
