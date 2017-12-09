@@ -5,7 +5,7 @@ class YonetimsController < ApplicationController
   before_action :set_yonetim, only: [:edit, :update, :show, :destroy]
 
   def index
-    @yonetims = Yonetim.all
+    @yonetims = Yonetim.all.sort
   end
 
   def new
