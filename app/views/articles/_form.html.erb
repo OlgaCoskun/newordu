@@ -1,3 +1,4 @@
+<% provide(:title, 'Blog') %>
 <% if @article.errors.any? %>
 <h2><%= pluralize(@article.errors.count, "error") %> prohibited this post from being saved:</h2>
 <ul>
