@@ -3,15 +3,15 @@
 <div class="container">
   <div class="row">
 
-<h2>Bütün bloglar</h2>
+<h2>Bütün bloglar</h2><br>
 
 <% @articles.each do |article| %>
 
-    <h4><%= article.title %></h4>
+    <p><span><%= article.title %></span></p>
 
     <p><%= article.description %></p>
 
-    <%= article.user.name %>
+    <p class="user"><%= article.user.name %></p>
 
 
     <p class="date"><%= article.created_at.strftime("%B, %d, %Y") %> </p>

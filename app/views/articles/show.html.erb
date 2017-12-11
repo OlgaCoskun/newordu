@@ -2,10 +2,8 @@
 <div class="container">
   <div class="row">
 
-<h4><%= @article.title %></h4>
-<p>
-    <%= @article.description %>
-</p>
+<p><span><%= @article.title %></span></p>
+<p><%= @article.description %></p>
 
 <% if can? :update, @article %>
 <%= link_to "Değistir", edit_article_path(@article), class: "btn btn-warning btn-xs" %>

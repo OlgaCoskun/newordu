@@ -28,7 +28,7 @@ h2 {
     text-align: center;
 }
 
-#article_title {
+#article_title, #datepicker {
     width: 400px;
 }
 
@@ -104,7 +104,24 @@ span {
     font-weight: bold;
 }
 
-.date {
+.date, .user {
     font-size: 12px;
     color: #801089;
+}
+
+#curuser {
+    text-transform: lowercase;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 0px;
+}
+
+#cikis {
+    padding-top: 18px;
+}
+
+#cont {
+    color: #000;
+    font-size: 18px;
+    text-align: center;
 }
