@@ -19,7 +19,7 @@
 </ul>
 <% end %>
 
-<%= form_for :duyurular, url: duyurulars_path do |f| %>
+<%= form_for(@duyurular) do |f| %>
 
     <p>
         <%= f.label :title, "Tarih" %><br>

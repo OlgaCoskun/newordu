@@ -13,8 +13,7 @@
 
     <p class="user"><%= article.user.name %></p>
 
-
-    <p class="date"><%= article.created_at.strftime("%B, %d, %Y") %> </p>
+    <p class="date"><%= l(article.created_at, format: :long) %></p>
 
     <p>
         <%= link_to 'Gösteri', article_path(article), class: "btn btn-info btn-xs" %>
