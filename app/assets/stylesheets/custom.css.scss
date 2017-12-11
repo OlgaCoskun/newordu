@@ -12,6 +12,7 @@
     margin-bottom: 0px;
     background: #801089;
     text-transform: uppercase;
+    font-size: 14px;
 }
 
 a {
@@ -39,4 +40,66 @@ h2 {
 #slider {
     padding-left: 0;
     padding-right: 0;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+    color: #801089;
+}
+
+body {
+    font-size: 18px;
+}
+
+a {
+    color: #fff;
+}
+
+em {
+    display: block;
+    text-align: right;
+}
+
+#footer, #footer3 {
+    background: #801089;
+    color: #fff;
+    font-size: 16px;
+}
+
+#footer2, #footer4 {
+    padding: 0px;
+    background: #801089;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+
+#email {
+    color: #fff;
+}
+
+.dropdown-menu>li>a {
+    background: #801089;
+    color: #fff;
+}
+
+#name {
+    text-align: center;
+}
+
+#baskan, #merhaba {
+    padding-top: 40px;
+}
+
+#avtor {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+
+span {
+    font-weight: bold;
 }
