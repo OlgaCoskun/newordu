@@ -19,7 +19,7 @@
   <div class="field">
     <%= f.label :password, "Şifre" %>
     <% if @minimum_password_length %>
-    <em>(Şifreniz en az <%= @minimum_password_length %> karakterden oluşmalı, harf ve rakam içermelidir)</em>
+    <p>(Şifreniz en az <%= @minimum_password_length %> karakterden oluşmalı, harf ve rakam içermelidir)</p>
     <% end %><br />
     <%= f.password_field :password, autocomplete: "off" %>
   </div>
