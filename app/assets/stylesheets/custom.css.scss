@@ -76,7 +76,7 @@ em {
     text-align: center;
 }
 
-#email {
+#email, #telefon {
     color: #fff;
 }
 
@@ -102,4 +102,9 @@ em {
 
 span {
     font-weight: bold;
+}
+
+.date {
+    font-size: 12px;
+    color: #801089;
 }
