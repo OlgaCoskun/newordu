@@ -58,6 +58,7 @@ group :development, :test do
   gem 'selenium-webdriver'
   gem 'sqlite3'
   gem 'dotenv-rails'
+  gem 'rspec-rails'
 end
 
 group :development do
