@@ -27,3 +27,4 @@ public/uploads
 config/cloudinary.yml
 config/initializers/cloudinary.rb
 config/secrets.yml
+/config/*
