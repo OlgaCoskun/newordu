@@ -1,24 +1,4 @@
-# README
+# Ordu Fatsa Anadolu Yakası Aslancami Köyü Derneği
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version 2.3.1p112
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[*Made with Ruby on Rails*](https://newordu.herokuapp.com/)
+[*Made only front end with*](https://aslancamikoyudernegi.com.tr/index.html).
