@@ -30,7 +30,6 @@ class YonetimsController < ApplicationController
 
   def update
     if @yonetim.update(yonetim_params)
-
       redirect_to @yonetim
     else
       render action: 'edit'
@@ -39,7 +38,6 @@ class YonetimsController < ApplicationController
 
   def destroy
     @yonetim.destroy
-
     redirect_to yonetims_path
   end
 
