@@ -25,10 +25,11 @@
 .env
 public/uploads
 
-/config/database.yml
-/config/secrets/yml
+/config/database.yml.example
+/config/secrets.yml.example
 /config/initializers/cloudinary.rb
 /config/initializers/cloudinary.yml
 /config/initializers/devise.rb
 
 .idea
+
