@@ -29,5 +29,6 @@ public/uploads
 /config/secrets/yml
 /config/initializers/cloudinary.rb
 /config/initializers/cloudinary.yml
+/config/initializers/devise.rb
 
 .idea
