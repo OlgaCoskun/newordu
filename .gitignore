@@ -25,6 +25,9 @@
 .env
 public/uploads
 
-/config/*
+/config/database.yml
+/config/secrets/yml
+/config/initializers/cloudinary.rb
+/config/initializers/cloudinary.yml
 
 .idea
