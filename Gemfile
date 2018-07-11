@@ -21,7 +21,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'bootstrap-sass', '3.3.7'
 
-gem 'devise'
+gem 'devise', '~> 4.4', '>= 4.4.1'
 
 gem 'carrierwave'
 gem 'cloudinary'
